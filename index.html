@@ -148,7 +148,7 @@
             align-items: center;
             justify-content: center;
             width: 100%;
-            padding: 10px;
+            padding: 25px;
             box-sizing: border-box;
             margin: 0 auto;
             max-width: 90%;
@@ -192,6 +192,27 @@
             margin-top: 50px;
             margin-bottom: 50px;
         }
+
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .bio-text {
+        width: 90%; /* Más ancho en móviles */
+        padding: 30px; /* Menos padding para mejor ajuste */
+        font-size: 1.2rem; /* Letra más pequeña */
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 480px) {
+    .bio-text {
+        width: 95%;
+        padding: 20px;
+        font-size: 1rem; /* Letra aún más pequeña para móviles pequeños */
+        line-height: 1.3;
+    }
+}
+
 
         /* Video grid section */
         .video-grid {
@@ -298,6 +319,28 @@
             scroll-snap-align: start;
             overscroll-behavior: none;
         }
+
+        /* Estilos para los títulos de las secciones de videos */
+        .video-group-title {
+            font-family: 'Bahnschrift', sans-serif;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-top: 60px;
+            margin-bottom: 20px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            opacity: 0.8;
+        }
+
+        /* Media query para dispositivos móviles */
+        @media (max-width: 768px) {
+            .video-group-title {
+                font-size: 2rem; /* Tamaño más pequeño para móviles */
+                margin-top: 40px;
+                margin-bottom: 15px;
+            }
+        }
+
     </style>
 </head>
 
@@ -331,18 +374,25 @@
     <!-- Vimeo video and bio section -->
     <section class="vimeo-bio-container">
         <div class="vimeo-video">
-            <iframe src="https://player.vimeo.com/video/1051460497" frameborder="1" allow="autoplay; fullscreen; clipboard-write; encrypted-media"></iframe>
+<iframe src="https://player.vimeo.com/video/1051460497?background=0&autoplay=0&muted=0&title=0&byline=0&portrait=1&badge=0&controls=1&dnt=1"
+        width="1920" height="1080" frameborder="0"
+        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media">
+</iframe>
         </div>
         <div class="bio-text">
             <h2>About Me</h2>
-           <p>Martín Cerdá Diez is a freelance post-production specialist, 3D and VFX artist with 10 years of experience in the industry. 
-            <p>He studied Image and Sound Design at the University of Buenos Aires and has worked on campaigns for brands such as Evian, Pizza Hut, Pringles, Amazon Prime Video, and Huggies, among others.</p> 
-<p>His work combines creativity and technical precision to bring advertising, entertainment, and digital content projects to life.</p>
-            <p>In early 2024, Martín co-founded TUCO Visual Studio, where he currently works as a post-producer and supervisor.</p>
+            <p>I'm a freelance post-production specialist, 3D and VFX artist with 10 years of experience in the industry.</p>
+            <p>I studied Image and Sound Design at the University of Buenos Aires and have worked on campaigns for brands such as Evian, Pizza Hut, Pringles, ESPN, Amazon Prime Video, and Huggies, among others.</p>
+            <p>My work combines creativity and technical precision to bring advertising, entertainment, and digital content projects to life.</p>
+            <p>In early 2024, I co-founded TUCO Visual Studio, where I currently work as a post-producer and supervisor.</p>
         </div>
     </section>
+
+    <!-- Título de la sección de videos -->
     <h2 class="section-title">Featured Projects</h2>
-    <!-- Grid of videos starting from the second one -->
+
+    <!-- Primer grupo de videos: Commercials -->
+    <h3 class="video-group-title">Commercials</h3>
     <section class="video-grid">
         <div class="video-section">
             <video autoplay muted loop playsinline>
@@ -363,7 +413,11 @@
                 <a href="http://www.pringles.com" target="_blank">Pringles</a>
             </div>
         </div>
+    </section>
 
+    <!-- Segundo grupo de videos: Social Media -->
+    <h3 class="video-group-title">Social Media</h3>
+    <section class="video-grid">
         <div class="video-section">
             <video autoplay muted loop playsinline>
                 <source src="videos/4.mp4" type="video/mp4">
@@ -383,11 +437,11 @@
                 <a href="https://www.bijules.me/" target="_blank">Bijules</a>
             </div>
         </div>
-        <!-- Add more video sections as needed -->
-
+    <h2 class="section-title">Contact me:</h2>
+    <h2 class="section-title">+52 1 5656860795 |</h2>
+    <h2 class="section-title">martincerdadiez@gmail.com</h2>
     </section>
-    <h2 class="section-title"></h2>
-    <h2 class="section-title"></h2>
+
     <script>
         // Select all video elements
         const videos = document.querySelectorAll('.autoplay-video');
