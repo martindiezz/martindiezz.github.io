@@ -120,6 +120,27 @@
             object-fit: cover;
         }
 
+        /* Estilos para el título de la sección de videos */
+        .section-title {
+            font-family: 'Bahnschrift', sans-serif;
+            font-size: 3rem;
+            text-align: center;
+            margin-top: 60px;
+            margin-bottom: 30px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            opacity: 0.8;
+        }
+
+        /* Media query para dispositivos móviles */
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2rem; /* Tamaño más pequeño para móviles */
+                margin-top: 40px;
+                margin-bottom: 20px;
+            }
+        }
+
         /* Vimeo video and bio section */
         .vimeo-bio-container {
             display: flex;
@@ -129,7 +150,7 @@
             padding: 20px;
             box-sizing: border-box;
             margin: 0 auto;
-            max-width: 1200px;
+            max-width: 85%;
         }
 
         .vimeo-video {
@@ -150,8 +171,8 @@
         .bio-text {
             width: 70%;
             padding: 60px;
-            font-family: 'Gilroy-Light', sans-serif;
-            font-size: 1.2rem;
+            font-family: 'Bahnschrift', sans-serif;
+            font-size: 1.5rem;
             line-height: 1.6;
             color: white;
             text-align: left;
@@ -303,9 +324,10 @@
            <p>Martín Cerdá Diez is a freelance post-production specialist, 3D and VFX artist with 10 years of experience in the industry. 
             <p>He studied Image and Sound Design at the University of Buenos Aires and has worked on campaigns for brands such as Evian, Pizza Hut, Pringles, Amazon Prime Video, and Huggies, among others.</p> 
 <p>His work combines creativity and technical precision to bring advertising, entertainment, and digital content projects to life.</p>
+            <p>In early 2024, Martín co-founded TUCO Visual Studio, where he currently works as a post-producer and supervisor.</p>
         </div>
     </section>
-
+    <h2 class="section-title">Featured Projects</h2>
     <!-- Grid of videos starting from the second one -->
     <section class="video-grid">
         <div class="video-section">
